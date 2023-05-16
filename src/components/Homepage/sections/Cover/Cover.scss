@@ -1,0 +1,77 @@
+@import '../../../../globals/scss/variables.scss';
+
+.cover {
+    min-height: 87vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.25vh;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    &.inactive {
+        opacity: 0;
+    }
+    .lhs {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        max-width: 50%;
+        @media only screen and (max-width: 768px) {
+            min-width: unset;
+            max-width: unset;
+            min-height: 50%;
+            max-height: 50%;
+            margin: 0 auto;
+
+        }
+        .header {
+            font-size: 44px;
+            font-weight: 200;
+            color: $text-primary;
+            text-shadow: 5px 0px 7px $text-secondary;
+        }
+        .subheader {
+            font-size: 24px;
+            font-weight: 200;
+            color:$text-secondary;
+        }
+        .lhs-content {
+            border: 1px solid $text-primary;
+            max-width: 50%;
+            margin: 8vh 0;
+            padding: 12px 12px;
+            font-size: 18px;
+            font-weight: 300;
+            color: $text-primary;
+            @media only screen and (max-width: 768px) {
+                @include center-div-horizontally;
+                margin-top: 2vh;
+                border: unset;
+            }
+            .tag-list {
+                margin-bottom: 5vh;
+                padding: 0;
+                .tag-content {
+                    text-decoration: none;
+                    list-style-type: none;
+                }
+                .btn-content {
+                    text-decoration: none;
+                    list-style-type: none;
+                    margin: 12px auto;
+                }
+            }
+        }
+        
+    }
+    .rhs {
+        min-width: 50%;
+        max-width: 50%;
+        @media only screen and (max-width: 768px) {
+            min-width: unset;
+            max-width: unset;
+            min-height: 50%;
+            max-height: 50%;
+        }
+    }
+}

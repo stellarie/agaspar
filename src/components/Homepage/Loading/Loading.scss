@@ -1,0 +1,23 @@
+@import '../../../globals/scss/variables.scss';
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    @include center-div;
+
+    .label {
+        text-shadow: 2px 0px 2px $text-secondary;
+        position: sticky;
+        align-self: center;
+        font-size: 48px;
+        font-weight: 100;
+    }
+    .bar {
+        text-shadow: 5px 0px 2px $text-secondary;
+        position: sticky;
+        align-self: center;
+        @media only screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+}

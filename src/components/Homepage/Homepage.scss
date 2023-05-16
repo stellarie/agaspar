@@ -1,0 +1,23 @@
+@import '../../globals/scss/variables';
+
+.home {
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        opacity: 0;
+        height: 100vh;
+        .sections {
+            display: flex;
+            flex-direction: column;
+            .section {
+                min-height: 87vh;
+                margin: 13vh 0;
+                &:first-child {
+                    margin: unset;
+                    margin-bottom: 13vh;
+                }
+            }
+        }
+    }
+}

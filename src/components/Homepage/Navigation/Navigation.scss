@@ -1,0 +1,56 @@
+@import '../../../globals/scss/variables';
+
+.navigation {
+    @include center-div;
+    display: none;
+    position: fixed;
+    min-width: 100%;
+    min-height: 44px;
+    background-color: rgba($color: $bg-color, $alpha: 0.90);
+    //border: 1px solid rgba($color: $bg-secondary-color, $alpha: 0.90);
+    border-radius: 2px;
+    top: unset;
+    bottom: 3vh;
+
+    &.nav-active {
+        display: flex;
+    }
+
+    &.nav-inactive {
+        display: none;
+    }
+
+    .nav-items {
+        display: flex;
+        margin: auto;
+        a {
+            margin: auto 20px;
+            text-decoration: none;
+            color: $text-primary;
+            transition-delay: 0.25s;
+            transition: 0.25s ease-in;
+            &.active {
+                color: $text-secondary;
+                font-weight: 400;
+                font-size: 20px;
+                transition: 0.25s ease-in;
+            }
+            &:hover {
+                font-weight: 400;
+                font-size: 18px;
+                transition: 0.25s ease-in;
+            }
+            &.active:hover {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            min-width: unset;
+            bottom: 5vh;
+            a {
+                margin: auto 6px;
+            }
+        }
+    }
+}
