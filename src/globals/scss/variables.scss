@@ -3,6 +3,23 @@ $bg-secondary-color: #495579;
 $text-primary: #251749;
 $text-secondary: #263159;
 
+@mixin section-div {
+    min-height: 87vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.25vh;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+@mixin header-div {
+    font-size: 44px;
+    font-weight: 200;
+    color: $text-primary;
+    text-shadow: 5px 0px 7px $text-secondary;
+}
+
 @mixin center-div {
     position: absolute;
     top: 50%;

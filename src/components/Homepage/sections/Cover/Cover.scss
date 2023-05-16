@@ -1,13 +1,8 @@
 @import '../../../../globals/scss/variables.scss';
 
 .cover {
-    min-height: 87vh;
-    display: flex;
-    flex-direction: row;
-    margin-top: 3.25vh;
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-    }
+    @include section-div;
+    
     &.inactive {
         opacity: 0;
     }
@@ -25,10 +20,7 @@
 
         }
         .header {
-            font-size: 44px;
-            font-weight: 200;
-            color: $text-primary;
-            text-shadow: 5px 0px 7px $text-secondary;
+            @include header-div;
         }
         .subheader {
             font-size: 24px;

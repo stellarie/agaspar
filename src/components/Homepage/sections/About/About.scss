@@ -1,3 +1,9 @@
+@import '../../../../globals/scss/variables';
+
 .about {
-    min-height: 87vh;
+    @include section-div;
+
+    .header {
+        @include header-div;
+    }
 }

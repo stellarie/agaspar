@@ -1,10 +1,11 @@
 import React from "react";
-import Circle from "../../../Circle/Circle";
 import "./About.scss";
 
 const About = () => {
     return <div className="about">
-        TODO about section
+        <div className="header">
+            about me
+        </div>
     </div>
 }
 

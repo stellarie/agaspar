@@ -28,7 +28,7 @@ const Cover = ({onSectionClick = () => {}}) => {
         onSectionClick();
     }
 
-    return <div className={`cover fade-in-quick`}>
+    return <div className={`cover fade-in-quick ${window.location.hash !== "#home" ? "inactive" : ""}`}>
         <div className="lhs">
             <span className="header">&lt;alecs-gaspar/&gt;</span>
             <span className="subheader">from ideas to reality</span>
