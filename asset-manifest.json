@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/agaspar/static/css/main.58e81b42.css",
+    "main.js": "/agaspar/static/js/main.cae69c64.js",
+    "static/js/787.5c39024c.chunk.js": "/agaspar/static/js/787.5c39024c.chunk.js",
+    "index.html": "/agaspar/index.html",
+    "main.58e81b42.css.map": "/agaspar/static/css/main.58e81b42.css.map",
+    "main.cae69c64.js.map": "/agaspar/static/js/main.cae69c64.js.map",
+    "787.5c39024c.chunk.js.map": "/agaspar/static/js/787.5c39024c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e81b42.css",
+    "static/js/main.cae69c64.js"
+  ]
+}
