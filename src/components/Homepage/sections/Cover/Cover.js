@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../../../inputs/Button/Button";
+import Circle from "../../../Circle/Circle";
 import "./Cover.scss";
 
 const Cover = ({onSectionClick = () => {}}) => {
-    const [transition, setTransition] = useState(true);
+    //const [display, setDisplay] = useState("fade-in");
 
     const scrollTo = (anchor) => {
+        document.querySelector(".cover").classList.remove("fade-in-quick");
+        document.querySelector(".cover").classList.add("inactive");
         const href = document.querySelector(anchor);
-        if(!href) return;
-        setTransition(false);
+        if(!href) {
+            document.querySelector(".cover").classList.add("fade-in-quick");
+            document.querySelector(".cover").classList.remove("inactive");
+            return;
+        }
         href.scrollIntoView({
             behavior: "smooth"
         });
@@ -22,7 +28,7 @@ const Cover = ({onSectionClick = () => {}}) => {
         onSectionClick();
     }
 
-    return <div className={`cover ${transition ? "fade-in" : "inactive"}`}>
+    return <div className={`cover fade-in-quick`}>
         <div className="lhs">
             <span className="header">&lt;alecs-gaspar/&gt;</span>
             <span className="subheader">from ideas to reality</span>
@@ -38,26 +44,43 @@ const Cover = ({onSectionClick = () => {}}) => {
                     Know me more, and let's talk:
                     <ul className="tag-list">
                         <li className="btn-content">
-                            <Button type={"btn-1"} onClick={()=>scrollTo("#about")} label={"About Me"}/>
+                            <Button type={"btn-1"} onClick={()=>{
+                                    scrollTo("#about");
+                                }
+                            } label={"About Me"}/>
                         </li>
                         <li className="btn-content">
-                            <Button type={"btn-1"} onClick={()=>scrollTo("#services")} label={"What can I do for you?"}/>
+                            <Button type={"btn-1"} onClick={()=>{
+                                    scrollTo("#services");
+                                }
+                            } label={"What can I do for you?"}/>
                         </li>
                         <li className="btn-content">
-                            <Button type={"btn-1"} onClick={()=>scrollTo("#portfolio")} label={"What have I done?"}/>
+                            <Button type={"btn-1"} onClick={()=>{
+                                    scrollTo("#portfolio");
+                                }
+                            } label={"What have I done?"}/>
                         </li>
                         <li className="btn-content">
-                            <Button type={"btn-1"} onClick={()=>scrollTo("#misc")} label={"Life, Lifting, and Leisure"}/>
+                            <Button type={"btn-1"} onClick={()=>{
+                                    scrollTo("#services");
+                                }
+                            } label={"Life, Lifting, and Leisure"}/>
                         </li>
                         <li className="btn-content">
-                            <Button type={"btn-1"} onClick={()=>scrollTo("#contact")} label={"Contact Me"}/>
+                            <Button type={"btn-1"} onClick={()=>{
+                                    scrollTo("#contact");
+                                }
+                            } label={"Contact Me"}/>
                         </li>
                     </ul>
                 </div>
             </span>
         </div>
         <div className="rhs">
-
+            <div className="rhs-content">
+                <Circle />
+            </div>
         </div>
     </div>
 }

@@ -1,9 +1,10 @@
 import React from "react";
+import Circle from "../../../Circle/Circle";
 import "./About.scss";
 
 const About = () => {
     return <div className="about">
-        about section
+        TODO about section
     </div>
 }
 

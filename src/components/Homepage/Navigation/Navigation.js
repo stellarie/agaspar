@@ -40,7 +40,7 @@ const Navigation = ({showNavigation, setShowNavigation}) => {
                 setShowNavigation(link.href !== "#home");
                 if (link.href === "#home") {
                     document.querySelector(".cover").classList.remove("inactive");
-                    document.querySelector(".cover").classList.add("fade-in");
+                    document.querySelector(".cover").classList.add("fade-in-quick");
                 }
             }}>{link.name}</a>,
             index
