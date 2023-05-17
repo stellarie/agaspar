@@ -5,8 +5,9 @@ import Homepage from './components/Homepage/Homepage';
 const App = () => {
 
   useEffect(() => {
-    if(window.location.hash !== "#home" || !window.location.hash) {
-      window.location.href = "#home";
+    if(window.location.hash !== "#home") {
+      window.location.hash = "#home";
+      window.location.reload();
     }
   },[])
 
