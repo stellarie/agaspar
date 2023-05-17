@@ -35,9 +35,7 @@ const Cover = ({onSectionClick = () => {}}) => {
             <span className="lhs-content">
                 <div className="desc">
                     <ul className="tag-list">
-                        <li className="tag-content"> Transform ideas into digital realities. </li>
-                        <li className="tag-content"> Create seamless experiences and bring your vision to life through innovative web solutions. </li>
-                        <li className="tag-content"> Bridge the gap between imagination and tangible online journeys. </li>
+                        <li className="tag-content"> Creating seamless experiences and bringing your vision to life through innovative web solutions. </li>
                     </ul>
                 </div>
                 <div className="button-list">

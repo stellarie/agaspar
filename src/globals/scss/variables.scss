@@ -1,4 +1,4 @@
-$bg-color: #FFFBEB;
+$bg-color: #FFF3E2;
 $bg-secondary-color: #495579;
 $text-primary: #251749;
 $text-secondary: #263159;
@@ -15,9 +15,9 @@ $text-secondary: #263159;
 
 @mixin header-div {
     font-size: 44px;
-    font-weight: 200;
+    font-weight: 300;
     color: $text-primary;
-    text-shadow: 5px 0px 7px $text-secondary;
+    text-shadow: .3rem .3rem 0 rgba($color: $text-secondary, $alpha: 0.3);
 }
 
 @mixin center-div {
@@ -49,4 +49,9 @@ $text-secondary: #263159;
     ::-webkit-scrollbar {
         display: none;  // Safari/Chrome
     }
+}
+
+@mixin left-box-with-shadow {
+    padding-left: 4rem;
+    background-image: linear-gradient(90deg, rgba($text-primary, .2), rgba($text-primary, .2) 14px, transparent 14px, transparent 20px, rgba($text-primary, .2) 20px, rgba($text-primary, .2) 23px, transparent 23px);
 }
