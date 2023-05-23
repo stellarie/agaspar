@@ -25,7 +25,10 @@
     }
 
     .am-rhs {
+        @include center-div-vertically;
+        transform: unset;
         width: 50%;
+        max-width: 75vh;
         height: 84vh;
         overflow: auto;
         @media only screen and (max-width: 768px) {
