@@ -1,9 +1,57 @@
 @import '../../../../globals/scss/variables';
 
-.about {
+.about-me {
     @include section-div;
+    
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .header {
-        @include header-div;
+    .am-lhs {
+        width: 50%;
+        @media only screen and (max-width: 768px) {
+            width: unset;
+        }
+        .am-header {
+            @include header-div;
+            @include center-div-vertically;
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+                transform: unset;
+                top: unset;
+            }
+        }
+    }
+
+    .am-rhs {
+        width: 50%;
+        height: 84vh;
+        overflow: auto;
+        @media only screen and (max-width: 768px) {
+            width: unset;
+            height: 80vh;
+        }
+        .am-content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            padding: 5vh; 
+            font-size: 22px;
+            @media only screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+            a {
+                text-decoration: none;
+                font-weight: 400;
+            }
+            b {
+                color: $text-secondary;
+            }
+            .am-section {
+                @include left-box-with-shadow;
+                margin-bottom: 24px;
+            }
+        }
     }
 }

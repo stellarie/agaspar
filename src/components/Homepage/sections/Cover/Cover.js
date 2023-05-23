@@ -16,7 +16,7 @@ const Cover = ({onSectionClick = () => {}}) => {
             return;
         }
         href.scrollIntoView({
-            behavior: "smooth"
+            behavior: "instant"
         });
 
         const { history } = window;

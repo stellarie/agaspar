@@ -20,7 +20,7 @@
 
         }
         .header {
-            @include header-div;
+            @include title-div;
         }
         .subheader {
             font-size: 24px;
