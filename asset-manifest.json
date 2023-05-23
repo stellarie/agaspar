@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/agaspar/static/css/main.1e7b5f2b.css",
-    "main.js": "/agaspar/static/js/main.ff06d5cd.js",
+    "main.css": "/agaspar/static/css/main.931711e8.css",
+    "main.js": "/agaspar/static/js/main.0ee66339.js",
     "static/js/787.5c39024c.chunk.js": "/agaspar/static/js/787.5c39024c.chunk.js",
     "index.html": "/agaspar/index.html",
-    "main.1e7b5f2b.css.map": "/agaspar/static/css/main.1e7b5f2b.css.map",
-    "main.ff06d5cd.js.map": "/agaspar/static/js/main.ff06d5cd.js.map",
+    "main.931711e8.css.map": "/agaspar/static/css/main.931711e8.css.map",
+    "main.0ee66339.js.map": "/agaspar/static/js/main.0ee66339.js.map",
     "787.5c39024c.chunk.js.map": "/agaspar/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e7b5f2b.css",
-    "static/js/main.ff06d5cd.js"
+    "static/css/main.931711e8.css",
+    "static/js/main.0ee66339.js"
   ]
 }
